@@ -17,25 +17,24 @@ public class PrioritiesTest {
 		List<String> events = createEventList();
 
 		int index = 0;
-		
+
 		System.out.println("Sample Input");
 		System.out.println(events.size());
-		
+
 		for (String event : events) {
 			if (event.equals("ENTER")) {
 				System.out.println(event + " " + priorities.sourceStudentList.get(index));
 				index++;
-			}
-			else {
+			} else {
 				System.out.println(event);
 			}
 
 		}
 
 		List<Student> queue = priorities.getStudents(events);
-		
+
 		System.out.println("\nSample Output");
-		
+
 		Iterator<Student> itr = queue.iterator();
 		while (itr.hasNext()) {
 			System.out.println(itr.next().getName());

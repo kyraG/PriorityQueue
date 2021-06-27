@@ -4,7 +4,6 @@ import java.util.Comparator;
 
 public class CustomComparator implements Comparator<Student> {
 
-
 	public int compare(Student student1, Student student2) {
 
 		if (student1.getCGPA() < student2.getCGPA()) {
@@ -26,6 +25,5 @@ public class CustomComparator implements Comparator<Student> {
 			return 0;
 		}
 	}
-
 
 }
